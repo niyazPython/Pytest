@@ -8,9 +8,9 @@ mask = df.duplicated()
 print('No.of Rows in file: ',df.shape[0])
 
 if (df[mask].shape[0])>0:
-  print('Duplicates Found : Yes')
+  print('Duplicates Found : YES')
   #print('\n')
   print('No.of Duplicate Records in file: ',df[mask].shape[0])
 else:
-  print('Duplicates Found : No')
+  print('Duplicates Found : NO')
 
