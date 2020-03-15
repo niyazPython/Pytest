@@ -1,0 +1,14 @@
+node("66"){
+  stage("Check out"){
+    git credentialsId: "ssh_devopspipeline_credentials", url: "git@github.aig.net:niahmed/DevOps_Demo.git", branch: "master"
+  }
+  
+  stage("Run tests"){
+    bat """
+        cd DS_Upgrade
+        python DS_Upgrade_DataTesting.py
+               
+
+       """
+  }
+}
