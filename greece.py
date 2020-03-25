@@ -11,7 +11,7 @@ import re
 import webbrowser
 import time
 import numpy as np
-para=input('\nEnter Parameter File Name with path:\n')
+para=input('C:\LedgerFileVsOGISFile_Validation_Parameter_file.xlsx')
 book = openpyxl.load_workbook(para)
 sheet = book.active
 inputfile=str(sheet['D4'].value)
